@@ -1,0 +1,254 @@
+body {
+  width:1000px;
+  margin:0px auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  /* background: rgba(217, 217, 217, 0.3);
+  background-image: url(https://tiqets-cdn.s3.eu-west-1.amazonaws.com/wordpress/blog/wp-content/uploads/2021/04/07104828/1280px-Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg);
+  background-size: 100%; */
+  background: url("images/Untitled.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  color: aliceblue;
+  /* margin-left: 50%; */
+}
+
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked+label,
+input[type="radio"]:not(:checked)+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d7d8b100;
+    background-color: #d7d8b1ab;
+}
+
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+    left: 3px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: #173D67;
+}
+
+
+input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+}
+
+input[type="radio"]:checked+label:after {
+    opacity: 0.6;
+}
+
+.textcols {
+	/* white-space: nowrap; */
+  font-family: 'Pacifico', cursive;
+  color: #ffffff;
+  text-align: start;
+  width: 400px;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 250px;
+	vertical-align: top;
+	background: #ffe1e100;
+}
+.textcols .textcols-item:first-child {
+	margin-right: 20px;
+}
+
+
+/* кнопки */
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 62px;
+
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  align-items: center;
+  text-decoration: none;
+
+  transition: background .1s linear, color .1s linear;
+
+}
+
+.btn {
+  margin: 20px;
+  border-radius: 32px;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: rgba(23, 61, 103, 0.6);
+  border: 3px solid rgba(23, 60, 103, 0);
+  /* opacity: 0.6; */
+
+  color: #ffffff;
+}
+
+
+.btn1 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 62px;
+
+  border: 3px solid rgb(86, 70, 6);
+  background-color: rgba(86, 70, 6);
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  align-items: center;
+  text-decoration: none;
+
+  transition: background .1s linear, color .1s linear;
+
+}
+
+.btn1 {
+  margin: 20px;
+  border-radius: 32px;
+  user-select: none;
+}
+
+.btn1:hover {
+  background-color: rgba(86, 70, 6, 0);
+  border: 3px solid rgb(86, 70, 6);
+  /* opacity: 0.6; */
+
+  color: rgb(86, 70, 6);
+}
+
+
+.btn2 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 62px;
+
+  border: 3px solid rgb(76, 62, 6);
+  background-color: rgba(76, 62, 6);
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  align-items: center;
+  text-decoration: none;
+
+  transition: background .1s linear, color .1s linear;
+
+}
+
+.btn2 {
+  margin: 20px;
+  border-radius: 32px;
+  user-select: none;
+}
+
+.btn2:hover {
+  background-color: rgba(76, 62, 6, 0);
+  border: 3px solid rgb(76, 62, 6);
+  /* opacity: 0.6; */
+
+  color: rgb(76, 62, 6);
+}
+
+
+
+#title{
+  font-size: 28px;
+  color: #173D67;
+  margin: 30px auto 30px;
+  font-family: 'Pacifico', cursive;
+  text-transform: uppercase;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#question{
+  font-size: 20px;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 500;
+  color: #523f18;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  text-transform: uppercase; 
+  width: 600px;
+}
+
+
+.right {
+  background-color: rgba(0, 200, 0, 0.5);
+  border-radius: 5px;
+  padding-left: 5px;
+  
+}
+.wrong {
+  background-color: rgba(255, 44, 55, 0.5);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.hidden {
+  display: none;
+}
+
+#quest{
+ margin: 0 auto 30px;
+}
+
+#quest1{
+  margin: 0 auto 30px;
+ }
+ 
+ 

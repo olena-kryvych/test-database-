@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div id="questions">
+
+            <h2 id="title"></h2>
+            
+            <div class="section__item">
+                <div clsss="section__img">
+
+                    <div id="quest">
+                        <img src="images/1 питання.jpg" alt="image" id="mainImage">
+                    </div>
+                </div>
+            </div>
+            <p id="question"></p>
+
+            <div class="textcols">
+
+                <div>
+                    <input type="radio" name="age" id="y1"> <label for="y1"> <span id="a1"> </label>
+                </div>
+                <div>
+                    <input type="radio" name="age" id="y2"> <label for="y2"> <span id="a2"> </label>
+                </div>
+                <div>
+                    <input type="radio" name="age" id="y3"> <label for="y3"> <span id="a3"> </label>
+                </div>
+                <div>
+                    <input type="radio" name="age" id="y4"> <label for="y4"> <span id="a4"> </label>
+                </div>
+            </div>
+
+            <div class="btn" id="get_answer">Відповісти</div>
+            <!-- <button id="get_answer">Дати відповідь</button> -->
+            <div class="right_div hidden" id="right_div">
+                <p class="right" id="right">Правильна відповідь</p>
+                <div class="btn1" id="next_question">Наступне питання</div>
+            </div>
+            <div class="wrong_div hidden" id="wrong_div">
+                <p class="wrong" id="wrong">Неправильна відповідь</p>
+                <div class="btn2" id="view_answer">Подивитися правильну відповідь</div>
+            </div>
+
+            <p id="answer" class="hidden"></p>
+        </div>
+        <div id="total_div">
+            <p>Номер питання: <span id="n"></span></p>
+            <p>Кількість очок: <span id="n_right"></span> (за правильні відповіді з першого разу)</p>
+        </div>
+    </div>
+
+
+    <input type="hidden" value="0" id="n_question">
+    <script src="js.js"></script>
+</body>
+
+</html>
